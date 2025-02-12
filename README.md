@@ -12,7 +12,7 @@ Rig inversion is demonstrated using a toy rig.
 
 python generate_toy_dataset.py
 
-### Step 2 : Train a model to approximate the rig and test is using animations
+### Step 2 : Train a model to approximate the rig and test it using animations
 
 python train_rig_approximation.py
 

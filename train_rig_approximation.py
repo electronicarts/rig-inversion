@@ -49,7 +49,7 @@ def train():
     data = np.load(os.path.join(dataset_folder, 'dataset.npz'))
     #We keep 10% of the dataset as a validation set
     dataset = ToyDataset(data['arr_0'][:-100], data['arr_1'][:-100])
-    validate_dataset = ToyDataset(data['arr_0'][100:], data['arr_1'][100:])
+    validate_dataset = ToyDataset(data['arr_0'][-100:], data['arr_1'][-100:])
 
     print(len(dataset), 'training samples', len(validate_dataset), 'validation samples')
 
